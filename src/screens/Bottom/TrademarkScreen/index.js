@@ -56,11 +56,11 @@ const data = [
   },
 ];
 
-const CategoryScreens = () => {
+const TrademarkScreen = () => {
   const [title, settitle] = useState(data[0].title);
   return (
     <Block flex backgroundColor="background">
-      <Header title="Danh mục" />
+      <Header title="Thương hiệu" />
       <Block row flex>
         <LeftBox data={data} settitle={settitle} />
         <RightBox title={title} />
@@ -69,4 +69,4 @@ const CategoryScreens = () => {
   );
 };
 
-export default CategoryScreens;
+export default TrademarkScreen;

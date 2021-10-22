@@ -22,6 +22,7 @@ const HomeScreens = () => {
   return (
     <Block flex backgroundColor="white">
       <Header type="Home" scroll={scrollY} />
+      
       <Animated.ScrollView
         removeClippedSubviews
         scrollEventThrottle={16}

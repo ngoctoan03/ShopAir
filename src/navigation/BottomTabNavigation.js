@@ -10,36 +10,36 @@ const BottomTabNavigation = () => {
   return (
     <Tab.Navigator tabBar={props => <CustomTabBar {...props} />}>
       <Tab.Screen
-        name={routes.HOMESCREENS}
-        component={bottom.HOMESCREENS}
+        name={routes.HOME_SCREEN}
+        component={bottom.HOMESCREEN}
         options={{
           tabBarLabel: 'Trang chủ',
         }}
       />
       <Tab.Screen
-        name={routes.CATEGORYSCREENS}
-        component={bottom.CATEGORYSCREENS}
+        name={routes.TRADEMARK_SCREEN}
+        component={bottom.TRADEMARKSCREEN}
         options={{
           tabBarLabel: 'Danh mục',
         }}
       />
       <Tab.Screen
-        name={routes.CHATSCREENS}
-        component={bottom.CHATSCREENS}
+        name={routes.FAVORITE_SCREEN}
+        component={bottom.CHATSCREEN}
         options={{
           tabBarLabel: 'Tin nhắn',
         }}
       />
       <Tab.Screen
-        name={routes.NOTIFICATIONSCREENS}
-        component={bottom.NOTIFICATIONSCREENS}
+        name={routes.NOTIFICATION_SCREEN}
+        component={bottom.NOTIFICATIONSCREEN}
         options={{
           tabBarLabel: 'Thông báo',
         }}
       />
       <Tab.Screen
-        name={routes.PROFILESCREENS}
-        component={bottom.PROFILESCREENS}
+        name={routes.USER_SCREEN}
+        component={bottom.PROFILESCREEN}
         options={{
           tabBarLabel: 'Tài khoản',
         }}
