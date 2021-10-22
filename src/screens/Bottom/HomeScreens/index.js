@@ -10,6 +10,10 @@ import FlashSale from './components/FlashSale';
 import SellingProduct from './components/SellingProduct';
 import styles from './styles';
 
+
+
+
+
 const HomeScreens = () => {
   const scrollY = useRef(new Animated.Value(0)).current;
   const [refresh, setrefresh] = useState(false);
@@ -19,10 +23,14 @@ const HomeScreens = () => {
     }, 1000);
   };
 
+
+
+
+  
   return (
     <Block flex backgroundColor="white">
       <Header type="Home" scroll={scrollY} />
-      
+
       <Animated.ScrollView
         removeClippedSubviews
         scrollEventThrottle={16}
