@@ -45,6 +45,9 @@ export const icons = {
   delivery_box: require('./icons/delivery_box.png'),
   vouncher: require('./icons/vouncher.png'),
   check_blank: require('./icons/check_blank.png'),
+  logo_shopair: require('./icons/shopair_logoicon.png'),
+  icon_facebook: require('./icons/icon_facebook.png'),
+  icon_google: require('./icons/icon_google.jpg'),
 };
 
 export const images = {

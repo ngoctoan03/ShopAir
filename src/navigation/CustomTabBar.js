@@ -3,11 +3,11 @@ import {Block, Text} from '@components';
 import {theme} from '@theme';
 import {getSize} from '@utils/responsive';
 import React from 'react';
-import {Image, Platform, Pressable, StyleSheet} from 'react-native';
+import {Image, Platform, Pressable, StyleSheet, View} from 'react-native';
 import {Badge} from 'react-native-elements';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
-const CustomTabBar = ({state, descriptors, navigation}) => {
+const CustomTabBar = ({state, descriptors, navigation, value, ...props}) => {
   const {bottom} = useSafeAreaInsets();
   return (
     <Block
@@ -83,11 +83,16 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
                 value="1"
               />
             )}
-            <Image
-              source={isFocused ? iconselect : icon}
-              style={styles.iconstyle(isFocused)}
-            />
-            <Text style={styles.textlabel(isFocused)}>{label}</Text>
+            <View>
+              {/* <Shadow /> */}
+              <Block alignCenter>
+                <Image
+                  source={isFocused ? iconselect : icon}
+                  style={styles.iconstyle(isFocused)}
+                />
+                <Text style={styles.textlabel(isFocused)}>{label}</Text>
+              </Block>
+            </View>
           </Pressable>
         );
       })}

@@ -28,30 +28,6 @@ const RootStack = () => {
           name={routes.BOTTOMTABBAR}
           component={BottomTabNavigation}
         />
-        <Stack.Screen
-          name={routes.PRODUCT_DETAILS}
-          component={common.PRODUCT_DETAILS}
-        />
-        <Stack.Screen
-          name={routes.CARTSCREENS}
-          component={common.CARTSCREENS}
-        />
-        <Stack.Screen
-          name={routes.SEARCHSCREEN}
-          component={bottom.SEARCHSCREEN}
-        />
-        <Stack.Screen
-          name={routes.ORDERHISTORY}
-          component={bottom.ORDERHISTORY}
-        />
-        <Stack.Screen
-          name={routes.ORDERDETAILS}
-          component={bottom.ORDERDETAILS}
-        />
-        <Stack.Screen
-          name={routes.PAYMENTSCREEN}
-          component={common.PAYMENT_SCREEN}
-        />
       </Stack.Navigator>
     </NavigationContainer>
   );
