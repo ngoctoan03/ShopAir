@@ -3,6 +3,9 @@ import SplashScreen from 'react-native-splash-screen';
 import RootStack from './navigation/RootStack';
 import {NetWork, Block} from '@components';
 
+// import LoginDetail from '@screens/User/Login/Login';
+// import SignDetail from '@screens/User/Register/Register';
+
 const App = () => {
   useEffect(() => {
     SplashScreen.hide();

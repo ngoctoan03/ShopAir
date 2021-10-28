@@ -24,13 +24,6 @@ const BottomTabNavigation = () => {
         }}
       />
       <Tab.Screen
-        name={routes.FAVORITE_SCREEN}
-        component={bottom.CHATSCREEN}
-        options={{
-          tabBarLabel: 'Tin nhắn',
-        }}
-      />
-      <Tab.Screen
         name={routes.NOTIFICATION_SCREEN}
         component={bottom.NOTIFICATIONSCREEN}
         options={{
